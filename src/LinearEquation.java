@@ -56,7 +56,7 @@ public LinearEquation(int x1, int y1, int x2, int y2) {
         return finalStr;
     }
     public String coordinateForX(double xValue) {
-        return "The point on the line is (" + xValue + ", " +  (xValue * slope() + yIntercept()) + ")";
+        return "The point on the line is (" + xValue + ", " +  roundedToHundredth(xValue * slope() + yIntercept()) + ")";
     }
 
     public double roundedToHundredth(double toRound) {
